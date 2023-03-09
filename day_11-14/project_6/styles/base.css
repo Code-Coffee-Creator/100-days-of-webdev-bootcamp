@@ -1,0 +1,114 @@
+body {
+  color: #8f9bad;
+  background-color: rgb(231, 223, 223);
+  font-family: 'Kanit', sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+section {
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.relative {
+  position: relative;
+}
+
+.padding-30 {
+  padding: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #7f1a88;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 20px 0;
+}
+
+a {
+  font-family: 'Kanit', sans-serif;
+  color: #632081;
+  outline: 0;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #631872;
+}
+
+a:focus {
+  outline: 0;
+}
+
+.main-content {
+  margin-top: 60px;
+}
+
+.section-header {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.section-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* slick custom */
+.slick-arrows-top {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0px, -50%);
+}
+
+.slick-custom-buttons {
+  color: #909090;
+  font-size: 10px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: #fff;
+  border-radius: 50%;
+  border: 1px solid #ebebeb;
+  padding: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.slick-custom-buttons:hover {
+  color: #541870;
+  border-color: #541870;
+}
+
+.slick-arrows-bot {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+}

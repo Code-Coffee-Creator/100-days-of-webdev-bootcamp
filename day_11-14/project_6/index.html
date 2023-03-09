@@ -1,0 +1,1572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Website</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel=" stylesheet" href="css/slick.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body>
+    <div class="site-wrapper">
+      <div class="main-overlay"></div>
+
+      <header class="header-default">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-xl">
+            <!-- logo  -->
+            <a
+              href="https://github.com/CodeCoffeeCreator"
+              target="_blank"
+              class="navbar-brand"
+            >
+              CodeCoffeeCreator
+            </a>
+
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown active">
+                  <a href="index.html" class="nav-link dropdown-toggle">Home</a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="#" class="dropdown-item">Fashion</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item">Movies</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item">Electronic</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item">Cricket</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item">Technology</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Latest</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Trending</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- right side of header  -->
+            <div class="header-right">
+              <ul class="social-icons list-unstyled list-inline mb-0">
+                <li class="list-inline-item">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><i class="fab fa-tiktok"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><i class="fab fa-pinterest"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </li>
+              </ul>
+
+              <!-- buttons  -->
+              <div class="header-buttons">
+                <button class="search icon-button">
+                  <i class="icon-magnifier"></i>
+                </button>
+                <button class="burger-menu icon-button">
+                  <span class="burger-icon"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- section starts  -->
+      <section id="hero">
+        <div class="container-xl">
+          <div class="row gy-4">
+            <div class="col-lg-8">
+              <div class="post featured-post-lg">
+                <div class="details clearfix">
+                  <a href="#" class="category-badge">Nature</a>
+                  <h2 class="post-title">
+                    <a href="#"
+                      >Some things that you should do outside your home this
+                      summer.</a
+                    >
+                  </h2>
+                  <ul class="meta list-inline mb-0">
+                    <li class="list-inline-item">
+                      <a href="#">Denny Pearce</a>
+                    </li>
+                    <li class="list-inline-item">30 May 2022</li>
+                  </ul>
+                </div>
+                <a href="#">
+                  <div class="thumb rounded">
+                    <div
+                      class="inner data-bg-image"
+                      data-bg-image="images/posts/featured-lg.jpg"
+                    ></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="post-tabs rounded bordered">
+                <ul
+                  class="nav nav-tabs nav-pills nav-fill"
+                  id="postTab"
+                  role="tablist"
+                >
+                  <li class="nav-item" role="presentation">
+                    <button
+                      aria-controls="popular"
+                      aria-selected="true"
+                      class="nav-link active"
+                      data-bs-target="#popular"
+                      data-bs-toggle="tab"
+                      id="popular-tab"
+                      role="tab"
+                      type="button"
+                    >
+                      Popular
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      aria-controls="recent"
+                      aria-selected="false"
+                      class="nav-link"
+                      data-bs-target="#recent"
+                      data-bs-toggle="tab"
+                      id="recent-tab"
+                      role="tab"
+                      type="button"
+                    >
+                      Recent
+                    </button>
+                  </li>
+                </ul>
+
+                <!-- content  -->
+                <div class="tab-content" id="postsTabContent">
+                  <!-- loader -->
+                  <div class="lds-dual-ring"></div>
+                  <!-- pop post  -->
+
+                  <div
+                    class="tab-pane fade show active"
+                    id="popular"
+                    aria-labelledby="popular-tab"
+                    role="tabpanel"
+                  >
+                    <!-- post  -->
+                    <div class="post post-list-sm circle">
+                      <div class="thumb circle">
+                        <a href="#">
+                          <div class="inner">
+                            <img
+                              src="images/posts/tabs-1.jpg"
+                              alt=""
+                              class="tabs-image"
+                            />
+                          </div>
+                        </a>
+                      </div>
+                      <div class="details clearfix">
+                        <h6 class="post-title my-0">
+                          <a href="#"
+                            >Victoria "Kavi" organizes her own apartment
+                            party</a
+                          >
+                        </h6>
+                        <ul class="meta list-inline mt-1 mb-0">
+                          <li class="list-inline-item">24 May 2022</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- post2  -->
+                    <div class="post post-list-sm circle">
+                      <div class="thumb circle">
+                        <a href="#">
+                          <div class="inner">
+                            <img
+                              src="images/posts/tabs-2.jpg"
+                              alt=""
+                              class="tabs-image"
+                            />
+                          </div>
+                        </a>
+                      </div>
+                      <div class="details clearfix">
+                        <h6 class="post-title my-0">
+                          <a href="#">Angular managed a new version</a>
+                        </h6>
+                        <ul class="meta list-inline mt-1 mb-0">
+                          <li class="list-inline-item">26 May 2022</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- post3  -->
+                    <div class="post post-list-sm circle">
+                      <div class="thumb circle">
+                        <a href="#">
+                          <div class="inner">
+                            <img
+                              src="images/posts/tabs-3.jpg"
+                              alt=""
+                              class="tabs-image"
+                            />
+                          </div>
+                        </a>
+                      </div>
+                      <div class="details clearfix">
+                        <h6 class="post-title my-0">
+                          <a href="#"
+                            >Temperature outside are very hot at the moment</a
+                          >
+                        </h6>
+                        <ul class="meta list-inline mt-1 mb-0">
+                          <li class="list-inline-item">28 May 2022</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- post4  -->
+                    <div class="post post-list-sm circle">
+                      <div class="thumb circle">
+                        <a href="#">
+                          <div class="inner">
+                            <img
+                              src="images/posts/tabs-4.png"
+                              alt=""
+                              class="tabs-image"
+                            />
+                          </div>
+                        </a>
+                      </div>
+                      <div class="details clearfix">
+                        <h6 class="post-title my-0">
+                          <a href="#"
+                            >Give a fresh breathe for your room design</a
+                          >
+                        </h6>
+                        <ul class="meta list-inline mt-1 mb-0">
+                          <li class="list-inline-item">01 Jun 2022</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- recent  -->
+                  <div
+                    class="tab-pane fade"
+                    id="recent"
+                    aria-labelledby="recent-tab"
+                    role="tabpanel"
+                  >
+                    <!-- post  -->
+                    <div class="post post-list-sm circle">
+                      <div class="thumb circle">
+                        <a href="#">
+                          <div class="inner">
+                            <img
+                              src="images/posts/tabs-2.jpg"
+                              alt=""
+                              class="tabs-image"
+                            />
+                          </div>
+                        </a>
+                      </div>
+                      <div class="details clearfix">
+                        <h6 class="post-title my-0">
+                          <a href="#"
+                            >Angular supports Ukraine at this situation</a
+                          >
+                        </h6>
+                        <ul class="meta list-inline mt-1 mb-0">
+                          <li class="list-inline-item">24 May 2022</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- post2  -->
+                    <div class="post post-list-sm circle">
+                      <div class="thumb circle">
+                        <a href="#">
+                          <div class="inner">
+                            <img
+                              src="images/posts/tabs-1.jpg"
+                              alt=""
+                              class="tabs-image"
+                            />
+                          </div>
+                        </a>
+                      </div>
+                      <div class="details clearfix">
+                        <h6 class="post-title my-0">
+                          <a href="#"
+                            >Kavi is making her portfolio on Behance</a
+                          >
+                        </h6>
+                        <ul class="meta list-inline mt-1 mb-0">
+                          <li class="list-inline-item">26 May 2022</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- post3  -->
+                    <div class="post post-list-sm circle">
+                      <div class="thumb circle">
+                        <a href="#">
+                          <div class="inner">
+                            <img
+                              src="images/posts/tabs-5.jpg"
+                              alt=""
+                              class="tabs-image"
+                            />
+                          </div>
+                        </a>
+                      </div>
+                      <div class="details clearfix">
+                        <h6 class="post-title my-0">
+                          <a href="#">Your apartment vibe is your soul</a>
+                        </h6>
+                        <ul class="meta list-inline mt-1 mb-0">
+                          <li class="list-inline-item">28 Jun 2022</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- post4  -->
+                    <div class="post post-list-sm circle">
+                      <div class="thumb circle">
+                        <a href="#">
+                          <div class="inner">
+                            <img
+                              src="images/posts/tabs-3.jpg"
+                              alt=""
+                              class="tabs-image"
+                            />
+                          </div>
+                        </a>
+                      </div>
+                      <div class="details clearfix">
+                        <h6 class="post-title my-0">
+                          <a href="#">Summer comes by hot and suddenly</a>
+                        </h6>
+                        <ul class="meta list-inline mt-1 mb-0">
+                          <li class="list-inline-item">04 Jun 2022</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- main content  -->
+      <section class="main-content">
+        <div class="container-xl">
+          <div class="row gy-4">
+            <!-- left part 1st section  -->
+            <div class="col-lg-8">
+              <div class="section-header">
+                <h3 class="section-title">Your choose</h3>
+              </div>
+
+              <div class="padding-30 rounded bordered">
+                <div class="row gy-5">
+                  <div class="col-sm-6">
+                    <!-- post  -->
+                    <div class="post">
+                      <div class="thumb rounded">
+                        <a href="#" class="category-badge position-absolute"
+                          >Technology</a
+                        >
+                        <span class="post-format">
+                          <i class="icon-picture"></i>
+                        </span>
+                        <a href="#">
+                          <div class="inner">
+                            <img src="images/posts/editors-lg.jpg" alt="" />
+                          </div>
+                        </a>
+                      </div>
+                      <ul class="meta list-inline mt-4 mb-0">
+                        <li class="list-inline-item">
+                          <a href="#">
+                            <img
+                              class="author"
+                              src="images/other/author-2.png"
+                              alt=""
+                            />
+                            Denny Pearce
+                          </a>
+                        </li>
+                        <li class="list-inline-item">05 May 2022</li>
+                      </ul>
+                      <h5 class="post-title mb-3 mt-3">
+                        <a href="#">100 days of code</a>
+                      </h5>
+                      <p class="excerpt mb-0">
+                        Computer scientist challenge for productivity
+                        development own skills by practice. Web development
+                        supports it like a boss.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="post post-list-sm square">
+                      <div class="thumb rounded">
+                        <a href="#">
+                          <div class="inner">
+                            <img src="images/posts/editor-side-1.jpg" alt="" />
+                          </div>
+                        </a>
+                      </div>
+                      <div class="details clearfix">
+                        <h6 class="post-title my-0">
+                          <a href="#">
+                            2 best friends and League of Legends Championship</a
+                          >
+                        </h6>
+                        <ul class="meta list-inline mt-1 mb-0">
+                          <li class="list-inline-item">25 May 2022</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="post post-list-sm square">
+                      <div class="thumb rounded">
+                        <a href="#">
+                          <div class="inner">
+                            <img src="images/posts/editor-side-2.jpg" alt="" />
+                          </div>
+                        </a>
+                      </div>
+                      <div class="details clearfix">
+                        <h6 class="post-title my-0">
+                          <a href="#"> 3 best ways to go nature at war time </a>
+                        </h6>
+                        <ul class="meta list-inline mt-1 mb-0">
+                          <li class="list-inline-item">25 May 2022</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="post post-list-sm square">
+                      <div class="thumb rounded">
+                        <a href="#">
+                          <div class="inner">
+                            <img src="images/posts/editor-side-3.jpg" alt="" />
+                          </div>
+                        </a>
+                      </div>
+                      <div class="details clearfix">
+                        <h6 class="post-title my-0">
+                          <a href="#">
+                            Top 10 VSCode extensions for productive coding.
+                          </a>
+                        </h6>
+                        <ul class="meta list-inline mt-1 mb-0">
+                          <li class="list-inline-item">28 May 2022</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="post post-list-sm square">
+                      <div class="thumb rounded">
+                        <a href="#">
+                          <div class="inner">
+                            <img src="images/posts/editor-side-4.jpg" alt="" />
+                          </div>
+                        </a>
+                      </div>
+                      <div class="details clearfix">
+                        <h6 class="post-title my-0">
+                          <a href="#"
+                            >We are hoping for victory, because it's our
+                            history</a
+                          >
+                        </h6>
+                        <ul class="meta list-inline mt-1 mb-0">
+                          <li class="list-inline-item">28 May 2022</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="spacer" data-height="50"></div>
+
+              <div class="section-header">
+                <h3 class="section-title">Trending</h3>
+              </div>
+
+              <div class="padding-30 rounded bordered">
+                <div class="row gy-5">
+                  <div class="col-sm-6">
+                    <div class="post">
+                      <div class="thumb rounded">
+                        <a href="#" class="category-badge position-absolute"
+                          >Rest</a
+                        >
+                        <span class="post-format">
+                          <i class="icon-picture"></i>
+                        </span>
+                        <a href="#">
+                          <div class="inner">
+                            <img src="images/posts/tren-lg-1.jpg" alt="" />
+                          </div>
+                        </a>
+                      </div>
+                      <ul class="meta list-inline mt-4 mb-0">
+                        <li class="list-inline-item">
+                          <a href="#">
+                            <img
+                              src="images/other/author-sm.jpg"
+                              class="author"
+                              alt=""
+                            />
+                            Vika Kavi
+                          </a>
+                        </li>
+                        <li class="list-inline-item">24 May 2022</li>
+                      </ul>
+                      <h5 class="post-title mb-3 mt-3">
+                        <a href="#"
+                          >Popular place for the rest with nature, water and
+                          pretty people</a
+                        >
+                      </h5>
+                      <p class="excerpt mb-0">
+                        Join to frendly group of creative and enthusiatic people
+                        for travel into forest, lakes etc
+                      </p>
+                    </div>
+
+                    <div class="post post-list-sm square before-seperator">
+                      <div class="thumb rounded">
+                        <a href="#">
+                          <div class="inner">
+                            <img src="images/posts/tren-sm-1.jpg" alt="" />
+                          </div>
+                        </a>
+                      </div>
+                      <div class="details clearfix">
+                        <h6 class="post-title my-0">
+                          <a href="#"
+                            >Technology digest - Runtime engine NodeJS</a
+                          >
+                        </h6>
+                        <ul class="meta list-inline mt-1 mb-0">
+                          <li class="list-inline-item">25 May 2022</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="post post-list-sm square before-seperator">
+                      <div class="thumb rounded">
+                        <a href="#">
+                          <div class="inner">
+                            <img src="images/posts/tren-sm-2.jpg" alt="" />
+                          </div>
+                        </a>
+                      </div>
+                      <div class="details clearfix">
+                        <h6 class="post-title my-0">
+                          <a href="#"
+                            >Technology digest - frontend framework VueJS</a
+                          >
+                        </h6>
+                        <ul class="meta list-inline mt-1 mb-0">
+                          <li class="list-inline-item">25 May 2022</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <div class="post">
+                      <div class="thumb rounded">
+                        <a href="#" class="category-badge position-absolute"
+                          >Art</a
+                        >
+                        <span class="post-format">
+                          <i class="icon-earphones"></i>
+                        </span>
+                        <a href="#">
+                          <div class="inner">
+                            <img src="images/posts/tren-lg-2.jpg" alt="" />
+                          </div>
+                        </a>
+                      </div>
+                      <ul class="meta list-inline mt-4 mb-0">
+                        <li class="list-inline-item">
+                          <a href="#">
+                            <img
+                              src="images/other/author-sm.jpg"
+                              class="author"
+                              alt=""
+                            />
+                            Vika Kavi
+                          </a>
+                        </li>
+                        <li class="list-inline-item">29 May 2022</li>
+                      </ul>
+                      <h5 class="post-title mb-3 mt-3">
+                        <a href="#">Volunteers hold charity concerts</a>
+                      </h5>
+                      <p class="excerpt mb-0">
+                        Volunteers hold charity concerts to collect humanitarian
+                        aid. Entrance - who can how much 💙💛
+                      </p>
+                    </div>
+
+                    <div class="post post-list-sm square before-seperator">
+                      <div class="thumb rounded">
+                        <a href="#">
+                          <div class="inner">
+                            <img src="images/posts/tren-sm-3.jpg" alt="" />
+                          </div>
+                        </a>
+                      </div>
+                      <div class="details clearfix">
+                        <h6 class="post-title my-0">
+                          <a href="#"
+                            >Technology digest - Angular from Google</a
+                          >
+                        </h6>
+                        <ul class="meta list-inline mt-1 mb-0">
+                          <li class="list-inline-item">25 May 2022</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="post post-list-sm square before-seperator">
+                      <div class="thumb rounded">
+                        <a href="#">
+                          <div class="inner">
+                            <img src="images/posts/tren-sm-4.jpg" alt="" />
+                          </div>
+                        </a>
+                      </div>
+                      <div class="details clearfix">
+                        <h6 class="post-title my-0">
+                          <a href="#"
+                            >Technology digest - UI/UX library ReactJS</a
+                          >
+                        </h6>
+                        <ul class="meta list-inline mt-1 mb-0">
+                          <li class="list-inline-item">25 May 2022</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+
+              <div class="section-header">
+                <h3 class="section-title">The Food Section</h3>
+                <div class="slick-arrows-top">
+                  <buttton
+                    class="carousel-topNav-prev slick-custom-buttons"
+                    type="button"
+                    data-role="none"
+                    aria-label="Previous"
+                  >
+                    <i class="icon-arrow-left"></i>
+                  </buttton>
+                  <buttton
+                    class="carousel-topNav-next slick-custom-buttons"
+                    type="button"
+                    data-role="none"
+                    aria-label="Next"
+                  >
+                    <i class="icon-arrow-right"></i>
+                  </buttton>
+                </div>
+              </div>
+
+              <div class="row post-carousel-twoCol post-carousel">
+                <div class="post post-over-content col-md-6">
+                  <div class="details clearfix">
+                    <a href="#" class="category-badge">Food</a>
+                    <h4 class="post-title">
+                      <a href="#"
+                        >Healphy food - myph or true story about vegetables</a
+                      >
+                    </h4>
+                    <ul class="meta list-inline mb-0">
+                      <li class="list-inline-item">
+                        <a href="#">Denny Pearce</a>
+                      </li>
+                      <li class="list-inline-item">03 Jun 2022</li>
+                    </ul>
+                  </div>
+                  <a href="#">
+                    <div class="thumb rounded">
+                      <div class="inner">
+                        <img src="images/posts/insp-1.jpg" alt="" />
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="post post-over-content col-md-6">
+                  <div class="details clearfix">
+                    <a href="#" class="category-badge">Food</a>
+                    <h4 class="post-title">
+                      <a href="#"
+                        >How to cook the best burger you ever eaten, and
+                        something spice to it.</a
+                      >
+                    </h4>
+                    <ul class="meta list-inline mb-0">
+                      <li class="list-inline-item">
+                        <a href="#">Nazar Gaponiuk</a>
+                      </li>
+                      <li class="list-inline-item">02 Jun 2022</li>
+                    </ul>
+                  </div>
+                  <a href="#">
+                    <div class="thumb rounded">
+                      <div class="inner">
+                        <img src="images/posts/insp-2.jpg" alt="" />
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="post post-over-content col-md-6">
+                  <div class="details clearfix">
+                    <a href="#" class="category-badge">Food</a>
+                    <h4 class="post-title">
+                      <a href="#"
+                        >Learn how to cook the best breakfast for your guests</a
+                      >
+                    </h4>
+                    <ul class="meta list-inline mb-0">
+                      <li class="list-inline-item">
+                        <a href="#">Vika Kavi</a>
+                      </li>
+                      <li class="list-inline-item">01 Jun 2022</li>
+                    </ul>
+                  </div>
+                  <a href="#">
+                    <div class="thumb rounded">
+                      <div class="inner">
+                        <img src="images/posts/insp-3.jpg" alt="" />
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="spacer" data-height="50"></div>
+
+              <div class="section-header">
+                <h3 class="section-title">Latest Posts</h3>
+              </div>
+
+              <div class="padding-30 rounded bordered">
+                <div class="row">
+                  <div class="col-md-12 col-sm-6">
+                    <!-- post  -->
+                    <div class="post post-list clearfix">
+                      <div class="thumb rounded">
+                        <span class="post-format-sm">
+                          <i class="icon-picture"></i>
+                        </span>
+                        <a href="#">
+                          <div class="inner">
+                            <img src="images/posts/latest-1.jpg" alt="" />
+                          </div>
+                        </a>
+                      </div>
+                      <div class="details">
+                        <ul class="meta list-inline mb-3">
+                          <li class="list-inline-item">
+                            <a href="#">
+                              <img
+                                src="images/other/author-sm.jpg"
+                                class="author"
+                                alt=""
+                              />
+                              Vika Kavi
+                            </a>
+                          </li>
+                          <li class="list-inline-item">
+                            <a href="#">Rest</a>
+                          </li>
+                          <li class="list-inline-item">26 May 2022</li>
+                        </ul>
+                        <h5 class="post-tile">
+                          <a href="#">
+                            Camping is one of the most popular in the summer
+                          </a>
+                        </h5>
+                        <p class="excerpt mb-0">
+                          Camping is one of the most popular in the summer,
+                          because it is a wonderful opportunity to enjoy nature
+                          and take a break from the hustle and bustle and
+                          disturbing news.
+                        </p>
+                        <div
+                          class="post-bottom clearfix d-flex align-items-center"
+                        >
+                          <div class="social-share me-auto">
+                            <button class="toggle-button icon-share"></button>
+                            <ul class="icons list-unstyled list-inline mb-0">
+                              <li class="list-inline-item">
+                                <a href="#"
+                                  ><i class="fab fa-facebook-f"></i
+                                ></a>
+                              </li>
+                              <li class="list-inline-item">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                              </li>
+                              <li class="list-inline-item">
+                                <a href="#"
+                                  ><i class="fab fa-linkedin-in"></i
+                                ></a>
+                              </li>
+                              <li class="list-inline-item">
+                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                              </li>
+                              <li class="list-inline-item">
+                                <a href="#"
+                                  ><i class="fab fa-telegram-plane"></i
+                                ></a>
+                              </li>
+                              <li class="list-inline-item">
+                                <a href="#"><i class="far fa-envelope"></i></a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="more-button float-end">
+                            <a href="#"><span class="icon-options"></span></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 col-sm-6">
+                    <!-- post  -->
+                    <div class="post post-list clearfix">
+                      <div class="thumb rounded">
+                        <a href="#">
+                          <div class="inner">
+                            <img src="images/posts/latest-2.jpg" alt="" />
+                          </div>
+                        </a>
+                      </div>
+                      <div class="details">
+                        <ul class="meta list-inline mb-3">
+                          <li class="list-inline-item">
+                            <a href="#">
+                              <img
+                                src="images/other/author-sm.jpg"
+                                class="author"
+                                alt=""
+                              />
+                              Vika Kavi
+                            </a>
+                          </li>
+                          <li class="list-inline-item">
+                            <a href="#">Meditation</a>
+                          </li>
+                          <li class="list-inline-item">26 May 2022</li>
+                        </ul>
+                        <h5 class="post-tile">
+                          <a href="#">
+                            When we meditate, we inject far-reaching and
+                            long-lasting benefits into our lives
+                          </a>
+                        </h5>
+                        <p class="excerpt mb-0">
+                          When we meditate, we inject far-reaching and
+                          long-lasting benefits into our lives:...
+                        </p>
+                        <div
+                          class="post-bottom clearfix d-flex align-items-center"
+                        >
+                          <div class="social-share me-auto">
+                            <button class="toggle-button icon-share"></button>
+                            <ul class="icons list-unstyled list-inline mb-0">
+                              <li class="list-inline-item">
+                                <a href="#"
+                                  ><i class="fab fa-facebook-f"></i
+                                ></a>
+                              </li>
+                              <li class="list-inline-item">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                              </li>
+                              <li class="list-inline-item">
+                                <a href="#"
+                                  ><i class="fab fa-linkedin-in"></i
+                                ></a>
+                              </li>
+                              <li class="list-inline-item">
+                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                              </li>
+                              <li class="list-inline-item">
+                                <a href="#"
+                                  ><i class="fab fa-telegram-plane"></i
+                                ></a>
+                              </li>
+                              <li class="list-inline-item">
+                                <a href="#"><i class="far fa-envelope"></i></a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="more-button float-end">
+                            <a href="#"><span class="icon-options"></span></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 col-sm-6">
+                    <!-- post  -->
+                    <div class="post post-list clearfix">
+                      <div class="thumb rounded">
+                        <span class="post-format-sm">
+                          <i class="icon-camrecorder"></i>
+                        </span>
+                        <a href="#">
+                          <div class="inner">
+                            <img src="images/posts/latest-3.jpg" alt="" />
+                          </div>
+                        </a>
+                      </div>
+                      <div class="details">
+                        <ul class="meta list-inline mb-3">
+                          <li class="list-inline-item">
+                            <a href="#">
+                              <img
+                                src="images/other/author-sm.jpg"
+                                class="author"
+                                alt=""
+                              />
+                              Vika Kavi
+                            </a>
+                          </li>
+                          <li class="list-inline-item">
+                            <a href="#">Concerts</a>
+                          </li>
+                          <li class="list-inline-item">26 May 2022</li>
+                        </ul>
+                        <h5 class="post-tile">
+                          <a href="#">
+                            Volunteering has many special and specific areas
+                          </a>
+                        </h5>
+                        <p class="excerpt mb-0">
+                          Volunteering has many special and specific areas. The
+                          concerts are one of them...
+                        </p>
+                        <div
+                          class="post-bottom clearfix d-flex align-items-center"
+                        >
+                          <div class="social-share me-auto">
+                            <button class="toggle-button icon-share"></button>
+                            <ul class="icons list-unstyled list-inline mb-0">
+                              <li class="list-inline-item">
+                                <a href="#"
+                                  ><i class="fab fa-facebook-f"></i
+                                ></a>
+                              </li>
+                              <li class="list-inline-item">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                              </li>
+                              <li class="list-inline-item">
+                                <a href="#"
+                                  ><i class="fab fa-linkedin-in"></i
+                                ></a>
+                              </li>
+                              <li class="list-inline-item">
+                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                              </li>
+                              <li class="list-inline-item">
+                                <a href="#"
+                                  ><i class="fab fa-telegram-plane"></i
+                                ></a>
+                              </li>
+                              <li class="list-inline-item">
+                                <a href="#"><i class="far fa-envelope"></i></a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="more-button float-end">
+                            <a href="#"><span class="icon-options"></span></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 col-sm-6">
+                    <!-- post  -->
+                    <div class="post post-list clearfix">
+                      <div class="thumb rounded">
+                        <a href="#">
+                          <div class="inner">
+                            <img src="images/posts/latest-4.jpg" alt="" />
+                          </div>
+                        </a>
+                      </div>
+                      <div class="details">
+                        <ul class="meta list-inline mb-3">
+                          <li class="list-inline-item">
+                            <a href="#">
+                              <img
+                                src="images/other/author-sm.jpg"
+                                class="author"
+                                alt=""
+                              />
+                              Vika Kavi
+                            </a>
+                          </li>
+                          <li class="list-inline-item">
+                            <a href="#">Nature</a>
+                          </li>
+                          <li class="list-inline-item">26 May 2022</li>
+                        </ul>
+                        <h5 class="post-tile">
+                          <a href="#">
+                            Most often, camping means a comfortable camping
+                            holiday for long-term parking
+                          </a>
+                        </h5>
+                        <p class="excerpt mb-0">
+                          Most often, camping means a comfortable camping
+                          holiday for long-term parking...
+                        </p>
+                        <div
+                          class="post-bottom clearfix d-flex align-items-center"
+                        >
+                          <div class="social-share me-auto">
+                            <button class="toggle-button icon-share"></button>
+                            <ul class="icons list-unstyled list-inline mb-0">
+                              <li class="list-inline-item">
+                                <a href="#"
+                                  ><i class="fab fa-facebook-f"></i
+                                ></a>
+                              </li>
+                              <li class="list-inline-item">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                              </li>
+                              <li class="list-inline-item">
+                                <a href="#"
+                                  ><i class="fab fa-linkedin-in"></i
+                                ></a>
+                              </li>
+                              <li class="list-inline-item">
+                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                              </li>
+                              <li class="list-inline-item">
+                                <a href="#"
+                                  ><i class="fab fa-telegram-plane"></i
+                                ></a>
+                              </li>
+                              <li class="list-inline-item">
+                                <a href="#"><i class="far fa-envelope"></i></a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="more-button float-end">
+                            <a href="#"><span class="icon-options"></span></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="text-center">
+                    <button class="btn btn-simple">Load More</button>
+                  </div>
+                </div>
+              </div>
+              <!-- left part over here  -->
+            </div>
+            <!-- right part starts from here  -->
+
+            <div class="col-lg-4">
+              <div class="sidebar">
+                <div class="widget rounded">
+                  <div class="widget-about text-center">
+                    <h4>CodeCoffeeCreator</h4>
+                    <p class="mb-4" style="text-align: justify">
+                      I am a beginning web developer and freelancer building my
+                      works portfolio and 'own brand' from scratch about a week
+                      before the start of the war. This is my blog website
+                      template
+                    </p>
+                    <ul class="social-icons list-unstyled list-inline mb-0">
+                      <li class="list-inline-item">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#"><i class="far fa-envelope"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="widget rounded">
+                  <div class="widget-header text-center">
+                    <h3 class="widget-title">Popular Posts</h3>
+                  </div>
+                  <div class="widget-content">
+                    <div class="post post-list-sm circle">
+                      <div class="thumb circle">
+                        <span class="number">1</span>
+                        <a href="#">
+                          <div class="inner">
+                            <img
+                              src="images/posts/tabs-1.jpg"
+                              alt=""
+                              class="tabs-image"
+                            />
+                          </div>
+                        </a>
+                      </div>
+                      <div class="details clearfix">
+                        <h6 class="post-title my-0">
+                          <a href="#">Bitcoin price raise after sudden fall</a>
+                        </h6>
+                        <ul class="meta list-inline mt-1 mb-0">
+                          <li class="list-inline-item">30 May 2022</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="post post-list-sm circle">
+                      <div class="thumb circle">
+                        <span class="number">2</span>
+                        <a href="#">
+                          <div class="inner">
+                            <img
+                              src="images/posts/tabs-2.jpg"
+                              alt=""
+                              class="tabs-image"
+                            />
+                          </div>
+                        </a>
+                      </div>
+                      <div class="details clearfix">
+                        <h6 class="post-title my-0">
+                          <a href="#"
+                            >Clubhouse Crosses 1Mn Downloads On Play Store</a
+                          >
+                        </h6>
+                        <ul class="meta list-inline mt-1 mb-0">
+                          <li class="list-inline-item">30 May 2022</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="post post-list-sm circle">
+                      <div class="thumb circle">
+                        <span class="number">3</span>
+                        <a href="#">
+                          <div class="inner">
+                            <img
+                              src="images/posts/tabs-3.jpg"
+                              alt=""
+                              class="tabs-image"
+                            />
+                          </div>
+                        </a>
+                      </div>
+                      <div class="details clearfix">
+                        <h6 class="post-title my-0">
+                          <a href="#">Check current Gold Price of 24k</a>
+                        </h6>
+                        <ul class="meta list-inline mt-1 mb-0">
+                          <li class="list-inline-item">30 May 2022</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="post post-list-sm circle">
+                      <div class="thumb circle">
+                        <span class="number">4</span>
+                        <a href="#">
+                          <div class="inner">
+                            <img
+                              src="images/posts/tabs-4.png"
+                              alt=""
+                              class="tabs-image"
+                            />
+                          </div>
+                        </a>
+                      </div>
+                      <div class="details clearfix">
+                        <h6 class="post-title my-0">
+                          <a href="#">Improve your mails with Grammarly</a>
+                        </h6>
+                        <ul class="meta list-inline mt-1 mb-0">
+                          <li class="list-inline-item">30 May 2022</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="widget rounded">
+                  <div class="widget-header text-center">
+                    <h3 class="widget-title">Explore Topics</h3>
+                  </div>
+                  <div class="widget-content">
+                    <ul class="list">
+                      <li><a href="#">Technology</a><span>(7)</span></li>
+                      <li><a href="#">Movies</a><span>(5)</span></li>
+                      <li><a href="#">Games</a><span>(1)</span></li>
+                      <li><a href="#">Lifestyle</a><span>(9)</span></li>
+                      <li><a href="#">Development</a><span>(2)</span></li>
+                      <li><a href="#">World</a><span>(4)</span></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="widget rounded">
+                  <div class="widget-header text-center">
+                    <h3 class="widget-title">Newsletter</h3>
+                  </div>
+                  <div class="widget-content">
+                    <span class="newsletter-headline text-center mb-3"
+                      >Join us, guys</span
+                    >
+                    <form action="#">
+                      <div class="mb-2">
+                        <input
+                          type="email"
+                          class="form-control w-100 text-center"
+                          placeholder="Email address..."
+                        />
+                      </div>
+                      <button class="btn btn-default btn-full">Sign Up</button>
+                    </form>
+                    <span class="newsletter-privacy text-center mt-3">
+                      By signing up, you agree to our
+                      <a href="#">Privacy policy</a>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="widget rounded">
+                  <div class="widget-header text-center">
+                    <h3 class="widget-title">WAR IN UKRAINE</h3>
+                  </div>
+                  <div class="widget-content">
+                    <div class="post-carousel-widget">
+                      <div class="post post-carousel">
+                        <div class="thumb rounded">
+                          <a href="#" class="category-badge position-absolute"
+                            >WAR IN UKRAINE</a
+                          >
+                          <a href="#">
+                            <div class="inner">
+                              <img src="images/posts/wid-1.jpg" alt="" />
+                            </div>
+                          </a>
+                        </div>
+                        <h5 class="post-title mb-0 mt-4">
+                          <a href="#"
+                            >Ukrainians successfully resist aggression</a
+                          >
+                        </h5>
+                        <ul class="meta list-inline mt-2 mb-0">
+                          <li class="list-inline-item">
+                            <a href="#">Techie Coder</a>
+                          </li>
+                          <li class="list-inline-item">29 March 2022</li>
+                        </ul>
+                      </div>
+                      <div class="post post-carousel">
+                        <div class="thumb rounded">
+                          <a href="#" class="category-badge position-absolute"
+                            >WAR IN UKRAINE</a
+                          >
+                          <a href="#">
+                            <div class="inner">
+                              <img src="images/posts/wid-2.jpg" alt="" />
+                            </div>
+                          </a>
+                        </div>
+                        <h5 class="post-title mb-0 mt-4">
+                          <a href="#"
+                            >Women in the Ukrainian army are doing their part</a
+                          >
+                        </h5>
+                        <ul class="meta list-inline mt-2 mb-0">
+                          <li class="list-inline-item">
+                            <a href="#">Techie Coder</a>
+                          </li>
+                          <li class="list-inline-item">29 March 2022</li>
+                        </ul>
+                      </div>
+                      <div class="post post-carousel">
+                        <div class="thumb rounded">
+                          <a href="#" class="category-badge position-absolute"
+                            >WAR IN UKRAINE</a
+                          >
+                          <a href="#">
+                            <div class="inner">
+                              <img src="images/posts/wid-3.jpg" alt="" />
+                            </div>
+                          </a>
+                        </div>
+                        <h5 class="post-title mb-0 mt-4">
+                          <a href="#"
+                            >russians are trying to destroy the civilized
+                            world</a
+                          >
+                        </h5>
+                        <ul class="meta list-inline mt-2 mb-0">
+                          <li class="list-inline-item">
+                            <a href="#">Techie Coder</a>
+                          </li>
+                          <li class="list-inline-item">29 March 2022</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="slick-arrows-bot">
+                      <buttton
+                        class="carousel-botNav-prev slick-custom-buttons"
+                        type="button"
+                        data-role="none"
+                        aria-label="Previous"
+                      >
+                        <i class="icon-arrow-left"></i>
+                      </buttton>
+                      <buttton
+                        class="carousel-botNav-next slick-custom-buttons"
+                        type="button"
+                        data-role="none"
+                        aria-label="Next"
+                      >
+                        <i class="icon-arrow-right"></i>
+                      </buttton>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="widget rounded">
+                  <div class="widget-header text-center">
+                    <h3 class="widget-title">Tag Clouds</h3>
+                  </div>
+                  <div class="widget-content">
+                    <a href="#" class="tag">#technologies</a>
+                    <a href="#" class="tag">#games</a>
+                    <a href="#" class="tag">#business</a>
+                    <a href="#" class="tag">#selfdevelopment</a>
+                    <a href="#" class="tag">#finance</a>
+                    <a href="#" class="tag">#AI</a>
+                    <a href="#" class="tag">#IT</a>
+                    <a href="#" class="tag">#books</a>
+                    <a href="#" class="tag">#webdevelopment</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="instagram">
+        <div class="container-xl">
+          <a href="#" class="btn btn-default btn-instagram"
+            >@CodeCoffeeCreator on Instagram</a
+          >
+          <div class="instagram-feed d-flex flex-wrap">
+            <div class="insta-item col-sm-2 col-6 col-md-2">
+              <a href="#">
+                <img src="images/insta/insta-1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="insta-item col-sm-2 col-6 col-md-2">
+              <a href="#">
+                <img src="images/insta/insta-2.jpg" alt="" />
+              </a>
+            </div>
+            <div class="insta-item col-sm-2 col-6 col-md-2">
+              <a href="#">
+                <img src="images/insta/insta-3.jpg" alt="" />
+              </a>
+            </div>
+            <div class="insta-item col-sm-2 col-6 col-md-2">
+              <a href="#">
+                <img src="images/insta/insta-4.jpg" alt="" />
+              </a>
+            </div>
+            <div class="insta-item col-sm-2 col-6 col-md-2">
+              <a href="#">
+                <img src="images/insta/insta-5.jpg" alt="" />
+              </a>
+            </div>
+            <div class="insta-item col-sm-2 col-6 col-md-2">
+              <a href="#">
+                <img src="images/insta/insta-6.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="container-xl">
+          <div class="footer-inner">
+            <div class="row d-flex align-items-center gy-4">
+              <div class="col-md-4">
+                <span class="copyright">&copy; 2022 CodeCoffeeCreator</span>
+              </div>
+              <div class="col-md-4 text-center">
+                <ul class="social-icons list-unstyled list-inline mb-0">
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fab fa-pinterest"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fab fa-tiktok"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <a href="#" id="return-to-top" class="float-md-end">
+                  <i class="icon-arrow-up"></i>
+                  Back to Top
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- canvas menu  -->
+    <div class="canvas-menu d-flex align-items-end flex-column">
+      <button class="btn-close" aria-label="Close" type="button"></button>
+
+      <div class="logo">
+        <h4>CodeCoffeeCreator</h4>
+      </div>
+      <nav>
+        <ul class="vertical-menu">
+          <li class="active">
+            <a href="index.html">Home</a>
+            <ul class="submenu">
+              <li><a href="#">Technology</a></li>
+              <li><a href="#">Self Development</a></li>
+              <li><a href="#">Games</a></li>
+              <li><a href="#">Training</a></li>
+              <li><a href="#">Business</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Latest</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social-icons list-unstyled list-inline mb-0 mt-auto w-100">
+        <li class="list-inline-item">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- search pop up  -->
+    <div class="search-popup">
+      <button class="btn-close" aria-label="Close" type="button"></button>
+
+      <div class="search-content">
+        <div class="text-center">
+          <h3 class="mb-4 mt-0">Press ESC to close</h3>
+        </div>
+
+        <form action="" class="d-flex search-form">
+          <input
+            type="search"
+            placeholder="Search and press enter ..."
+            aria-label="Search"
+            class="form-control me-2"
+          />
+          <button class="btn btn-default btn-lg" type="submit">
+            <i class="icon-magnifier"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.sticky-sidebar.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

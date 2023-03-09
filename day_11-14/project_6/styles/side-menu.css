@@ -1,0 +1,136 @@
+.canvas-menu {
+  background: #fff;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 40px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 300px;
+  z-index: 6;
+  box-shadow: -4px 0px 20px rgba(104, 42, 112, 0.2);
+  transform: translateX(350px);
+  transition: all 0.3s ease-in-out;
+}
+
+.canvas-menu.open {
+  transform: translateX(0);
+}
+
+.canvas-menu .btn-close {
+  box-sizing: content-box;
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  padding: 0.25em 0.25em;
+  color: #000;
+  border: 0;
+  border-radius: 0.25rem;
+  opacity: 0.4;
+  right: 30px;
+  top: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.canvas-menu .btn-close:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.canvas-menu .btn-close:hover {
+  opacity: 1;
+}
+
+.canvas-menu .logo {
+  margin-bottom: 80px;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.canvas-menu nav {
+  width: 100%;
+}
+
+.canvas-menu .vertical-menu {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.canvas-menu .vertical-menu li.openmenu > a {
+  color: #203656;
+}
+
+.canvas-menu .vertical-menu li.openmenu .switch {
+  transform: rotate(180deg);
+}
+
+.canvas-menu .vertical-menu li {
+  padding: 0;
+  position: relative;
+  list-style: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.canvas-menu .vertical-menu li a {
+  color: #5e2b75;
+  font-family: 'Kanit', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  position: relative;
+}
+
+.canvas-menu .vertical-menu li::after {
+  content: '';
+  display: block;
+  height: 1px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 100%;
+  background: #ebebeb;
+  background: linear-gradient(to right, #ebebeb 0%, transparent 100%);
+}
+
+.canvas-menu .vertical-menu li.active a {
+  color: #401355;
+}
+
+.canvas-menu .vertical-menu li.active .submenu a {
+  color: #79889e;
+}
+
+.canvas-menu .vertical-menu li.active .submenu a:hover {
+  color: #452056;
+}
+
+.canvas-menu .submenu {
+  display: none;
+  padding: 10px 20px;
+}
+
+.canvas-menu .submenu li {
+  padding: 5px 0;
+}
+
+.canvas-menu .submenu li::after {
+  content: '';
+  display: none;
+}
+
+.canvas-menu .vertical-menu li .switch {
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  font-size: 10px;
+  display: inline-block;
+  padding: 10px;
+  line-height: 1;
+  cursor: pointer;
+  color: #541870;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotate(0deg);
+  transition: all 0.2s ease-in-out;
+}
