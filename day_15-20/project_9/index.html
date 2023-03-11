@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Delivery Service</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="site" id="page">
+      <header>
+        <div class="container">
+          <nav>
+            <div class="left">
+              <div class="logo"><a href="#!">#CodeDelivery</a></div>
+              <div class="menu">
+                <ul>
+                  <li><a href="#!">Головна</a></li>
+                  <li><a href="#!">Меню</a></li>
+                  <li><a href="#!">Доставка</a></li>
+                  <li><a href="#!">Місцезнаходження</a></li>
+                  <li><a href="#!">Контакти</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="right">
+              <div class="icons">
+                <a href="#!" class="s-trigger">
+                  <i class="ri-search-line"></i>
+                  <i class="ri-close-line"></i>
+                </a>
+                <a href="#!" class="icart">
+                  <i class="ri-shopping-cart-line"></i>
+                  <span class="number">0</span>
+                </a>
+                <a href="#!" class="m-trigger mobile-only">
+                  <i class="ri-menu-line"></i>
+                </a>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <form action="" class="search">
+          <div class="container">
+            <input type="search" placeholder="Знайти собі поїсти..." />
+          </div>
+        </form>
+      </header>
+      <main>
+        <div class="hero">
+          <div class="container">
+            <h1>Не чекайте поки зголоднієте</h1>
+            <span class="text">Приготовано найкращими закладами</span>
+            <div class="slider">
+              <div class="thumb-big swiper">
+                <div class="wrapper swiper-wrapper">
+                  <div class="item swiper-slide">
+                    <div class="main">
+                      <div class="tags link-slide">
+                        <span>Сніданок</span>
+                        <div class="price">₴50.99</div>
+                        <a href="#!">Замовити!</a>
+                      </div>
+                      <div class="image">
+                        <img src="img/slider/food1.png" alt="food1" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item swiper-slide">
+                    <div class="main">
+                      <div class="tags link-slide">
+                        <span>Обід</span>
+                        <div class="price">₴70.99</div>
+                        <a href="#!">Замовити!</a>
+                      </div>
+                      <div class="image">
+                        <img src="img/slider/food2.png" alt="food2" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item swiper-slide">
+                    <div class="main">
+                      <div class="tags link-slide">
+                        <span>Вечеря</span>
+                        <div class="price">₴79.99</div>
+                        <a href="#!">Замовити!</a>
+                      </div>
+                      <div class="image">
+                        <img src="img/slider/food3.png" alt="food3" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div thumbSlider="" class="thumb-nav swiper">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <div class="item">
+                      <h4>Сніданок <br /><span>овочі з приправами</span></h4>
+                      <div class="thumbnail">
+                        <img src="img/slider/food1.png" alt="food1" />
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="item">
+                      <h4>Обід <br /><span>бутерброди з рибою</span></h4>
+                      <div class="thumbnail">
+                        <img src="img/slider/food2.png" alt="food2" />
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="item">
+                      <h4>Вечеря <br /><span>яєчня з беконом</span></h4>
+                      <div class="thumbnail">
+                        <img src="img/slider/food3.png" alt="food3" />
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="bg-primary"></div>
+        </div>
+
+        <div class="categories">
+          <div class="container">
+            <div class="head-brief left animate">
+              <h3>Що ми можемо зробити для Вас</h3>
+              <p>
+                Маємо можливість доставити їжу майже з будь-якого закладу Вашого
+                міста прямо до Вашої квартири. При чому зробимо це максимально
+                швидко!
+              </p>
+            </div>
+            <div class="cat-item">
+              <ul class="up animate">
+                <li>
+                  <div class="icon covering">
+                    <img src="img/categories/cat1.jpg" alt="cat1" />
+                  </div>
+                  <h3>Овочі</h3>
+                  <div class="qty">
+                    <span>одиниць</span>
+                    <strong>6</strong>
+                  </div>
+                  <a href="#!" class="link"></a>
+                </li>
+                <li>
+                  <div class="icon covering">
+                    <img src="img/categories/cat2.jpg" alt="cat2" />
+                  </div>
+                  <h3>Морепродукти</h3>
+                  <div class="qty">
+                    <span>одиниць</span>
+                    <strong>9</strong>
+                  </div>
+                  <a href="#!" class="link"></a>
+                </li>
+                <li>
+                  <div class="icon covering">
+                    <img src="img/categories/cat3.jpg" alt="cat3" />
+                  </div>
+                  <h3>Закуски</h3>
+                  <div class="qty">
+                    <span>одиниць</span>
+                    <strong>8</strong>
+                  </div>
+                  <a href="#!" class="link"></a>
+                </li>
+                <li>
+                  <div class="icon covering">
+                    <img src="img/categories/cat4.jpg" alt="cat4" />
+                  </div>
+                  <h3>Трави та приправи</h3>
+                  <div class="qty">
+                    <span>одиниць</span>
+                    <strong>11</strong>
+                  </div>
+                  <a href="#!" class="link"></a>
+                </li>
+                <li>
+                  <div class="icon covering">
+                    <img src="img/categories/cat5.jpg" alt="cat5" />
+                  </div>
+                  <h3>Випічка</h3>
+                  <div class="qty">
+                    <span>одиниць</span>
+                    <strong>46</strong>
+                  </div>
+                  <a href="#!" class="link"></a>
+                </li>
+                <li>
+                  <div class="icon covering">
+                    <img src="img/categories/cat6.jpg" alt="cat6" />
+                  </div>
+                  <h3>Десерти</h3>
+                  <div class="qty">
+                    <span>одиниць</span>
+                    <strong>25</strong>
+                  </div>
+                  <a href="#!" class="link"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-primary"></div>
+        </div>
+
+        <div class="tabbed has-bg">
+          <div class="container">
+            <div class="head-brief up animate">
+              <h3>Страви, що продаються найкраще</h3>
+              <p>
+                Тут Ви можете ознайомитися зі стравами, що останніми тижнями
+                продавалися найкраще та можливо обрати собі щось новеньке та
+                смачне
+              </p>
+            </div>
+            <nav class="tnav link-slide swiper">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">Закуски</li>
+                <li class="swiper-slide">Трави та приправи</li>
+                <li class="swiper-slide">Випічка</li>
+                <li class="swiper-slide">Десерти</li>
+                <li class="swiper-slide">Морепродукти</li>
+                <li class="swiper-slide">Овочі</li>
+              </ul>
+            </nav>
+            <div class="tabbed-item swiper">
+              <div class="products swiper-wrapper">
+                <div class="item swiper-slide">
+                  <ul>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img src="img/products/garnish1.jpg" alt="garnish1" />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"><a href="#!">Закуски</a></span>
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Закуски</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img src="img/products/garnish2.jpg" alt="garnish2" />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"><a href="#!">Закуски</a></span>
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Закуски</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img src="img/products/garnish3.jpg" alt="garnish3" />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"><a href="#!">Закуски</a></span>
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Закуски</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img src="img/products/garnish4.jpg" alt="garnish4" />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"><a href="#!">Закуски</a></span>
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Закуски</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img src="img/products/garnish5.jpg" alt="garnish5" />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"><a href="#!">Закуски</a></span>
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Закуски</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img src="img/products/garnish6.jpg" alt="garnish6" />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"><a href="#!">Закуски</a></span>
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Закуски</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="item swiper-slide">
+                  <ul>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img src="img/products/herbs1.jpg" alt="herbs1" />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"
+                            ><a href="#!">Трави та приправи</a></span
+                          >
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Трави та приправи</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img src="img/products/herbs2.jpg" alt="herbs2" />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"
+                            ><a href="#!">Трави та приправи</a></span
+                          >
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Трави та приправи</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img src="img/products/herbs3.jpg" alt="herbs3" />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"
+                            ><a href="#!">Трави та приправи</a></span
+                          >
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Трави та приправи</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img src="img/products/herbs4.jpg" alt="herbs4" />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"
+                            ><a href="#!">Трави та приправи</a></span
+                          >
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Трави та приправи</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img src="img/products/herbs5.jpg" alt="herbs5" />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"
+                            ><a href="#!">Трави та приправи</a></span
+                          >
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Трави та приправи</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="item swiper-slide">
+                  <ul>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img src="img/products/baked1.jpg" alt="baked1" />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"><a href="#!">Випічка</a></span>
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Випічка</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img src="img/products/baked2.jpg" alt="baked2" />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"><a href="#!">Випічка</a></span>
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Випічка</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img src="img/products/baked3.jpg" alt="baked3" />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"><a href="#!">Випічка</a></span>
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Випічка</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img src="img/products/baked4.jpg" alt="baked4" />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"><a href="#!">Випічка</a></span>
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Випічка</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img src="img/products/baked5.jpg" alt="baked5" />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"><a href="#!">Випічка</a></span>
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Випічка</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img src="img/products/baked6.jpg" alt="baked6" />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"><a href="#!">Випічка</a></span>
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Випічка</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img src="img/products/baked7.jpg" alt="baked7" />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"><a href="#!">Випічка</a></span>
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Випічка</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img src="img/products/baked8.jpg" alt="baked8" />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"><a href="#!">Випічка</a></span>
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Випічка</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img src="img/products/baked9.jpg" alt="baked9" />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"><a href="#!">Випічка</a></span>
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Випічка</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="item swiper-slide">
+                  <ul>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img src="img/products/desert1.jpg" alt="desert1" />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"><a href="#!">Десерти</a></span>
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Десерти</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img src="img/products/desert2.jpg" alt="desert2" />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"><a href="#!">Десерти</a></span>
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Десерти</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img src="img/products/desert3.png" alt="desert3" />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"><a href="#!">Десерти</a></span>
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Десерти</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img src="img/products/desert4.jpg" alt="desert4" />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"><a href="#!">Десерти</a></span>
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Десерти</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img src="img/products/desert5.jpg" alt="desert5" />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"><a href="#!">Десерти</a></span>
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Десерти</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img src="img/products/desert6.jpg" alt="desert6" />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"><a href="#!">Десерти</a></span>
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Десерти</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="item swiper-slide">
+                  <ul>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img src="img/products/seafood1.jpg" alt="seafood1" />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"><a href="#!">Морепродукти</a></span>
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Морепродукти</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img src="img/products/seafood2.jpg" alt="seafood2" />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"><a href="#!">Морепродукти</a></span>
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Морепродукти</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img src="img/products/seafood3.jpg" alt="seafood3" />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"><a href="#!">Морепродукти</a></span>
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Морепродукти</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img src="img/products/seafood4.jpg" alt="seafood4" />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"><a href="#!">Морепродукти</a></span>
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Морепродукти</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img src="img/products/seafood5.jpg" alt="seafood5" />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"><a href="#!">Морепродукти</a></span>
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Морепродукти</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img src="img/products/seafood6.jpg" alt="seafood6" />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"><a href="#!">Морепродукти</a></span>
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Морепродукти</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="item swiper-slide">
+                  <ul>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img
+                            src="img/products/vegetables1.jpg"
+                            alt="vegetables1"
+                          />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"><a href="#!">Овочі</a></span>
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Овочі</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img
+                            src="img/products/vegetables2.jpg"
+                            alt="vegetables2"
+                          />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"><a href="#!">Овочі</a></span>
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Овочі</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img
+                            src="img/products/vegetables3.jpg"
+                            alt="vegetables3"
+                          />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"><a href="#!">Овочі</a></span>
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Овочі</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img
+                            src="img/products/vegetables4.jpg"
+                            alt="vegetables4"
+                          />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"><a href="#!">Овочі</a></span>
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Овочі</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="thumbnail covering">
+                        <a href="#!">
+                          <img
+                            src="img/products/vegetables5.jpg"
+                            alt="vegetables5"
+                          />
+                        </a>
+                      </div>
+                      <div class="meta">
+                        <div class="catrate">
+                          <span class="cat"><a href="#!">Овочі</a></span>
+                          <span class="rating">
+                            <i class="ri-star-fill"></i>
+                            <span>4.9</span>
+                          </span>
+                        </div>
+                        <h2><a href="#!">Овочі</a></h2>
+                        <div class="price">
+                          <strong class="current">₴149.99</strong>
+                        </div>
+                        <div class="buttons">
+                          <button>Додати до кошика</button>
+                          <a href="#!" class="like">
+                            <i class="ri-heart-line"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="masterpiece has-bg">
+          <div class="bg-dark"></div>
+          <div class="container">
+            <div class="head-brief left animate">
+              <h3>Прямо з кухні до Вашого столу</h3>
+              <p>
+                При замовленні Ви можете проконсультуватися прямо в нас на
+                рахунок користі деяких страв, технологій їх приготування. Наш
+                колектив має досить повні знання про усі заклади, звідки ми
+                маємо замовлення.
+              </p>
+            </div>
+            <div class="wrapper masterpiece-wrapper">
+              <div class="item up animate">
+                <div class="image">
+                  <img src="img/slider/food3.png" alt="food3" />
+                </div>
+                <div class="text right animate">
+                  <h2>Основні страви</h2>
+                  <p>
+                    Головна страва являється основною з тих, що подаються під
+                    час прийому їжі, і часто складається з декількох страв. Як
+                    правило, вона йде за антре (entree). Найчастіше вона
+                    найважча в приготуванні, та для організму, тому не
+                    рекомендована зранку або пізно ввечері. Основні інгредієнти
+                    - м'ясо та риба, можливо приправлені овочами для користі і
+                    різноманіття смаку.
+                  </p>
+                </div>
+              </div>
+              <div class="item right animate">
+                <div class="image">
+                  <img src="img/slider/food4.png" alt="food3" />
+                </div>
+                <div class="text left animate">
+                  <h2>Закуски</h2>
+                  <p>
+                    Закуски це тип страв, які подаються перед основними
+                    стравами. Можуть бути також і окремим видом цілої страви.
+                    Закуски до столу часто супроводжують прийом невеликої
+                    кількості алкогольних напоїв.
+                  </p>
+                </div>
+              </div>
+              <div class="item left animate">
+                <div class="image">
+                  <img src="img/slider/food6.png" alt="food3" />
+                </div>
+                <div class="text right animate">
+                  <h2>Випічка і хліб</h2>
+                  <p>
+                    Хліб - харчовий продукт, що випікається з борошна, це ціла
+                    група основних продуктів, які виробляються способом
+                    випікання або смаження. Вихідним матеріалом є тісто, до
+                    складу якого входить борошно і вода, в які зазвичай додають
+                    дріжджі, закваску або розпушувач, проте мають місце й інші
+                    додатки. Хліб є популярним харчовим продуктом європейців,
+                    жителів Близького Сходу та представників індійських культур.
+                  </p>
+                </div>
+              </div>
+              <div class="item up animate">
+                <div class="image">
+                  <img src="img/slider/food1.png" alt="food3" />
+                </div>
+                <div class="text left animate">
+                  <h2>Сніданок</h2>
+                  <p>
+                    Сніданок являється надзвичайно важливим часом прийому їжі,
+                    тому що повинен забезпечити організм енергією на решту всьго
+                    дня. Тому цей прийом їжі повинен мати максимально
+                    збалансований набір мінералів, причому бути не дуже
+                    об'ємним.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="formblog has-bg">
+          <div class="bg-dark"></div>
+          <div class="container">
+            <div class="head-brief up animate">
+              <h3>Дещо З Нашого Блогу</h3>
+              <p>
+                Ви активно розвиваємо власний бренд в соціальних мережах, по
+                можливості долучайтеся до наших обговорень щодо будь якої теми.
+              </p>
+            </div>
+            <div class="wrapper formblog-wrapper">
+              <div class="post-list products">
+                <ul>
+                  <li class="left animate">
+                    <div class="thumbnail covering">
+                      <a href="#!">
+                        <img src="img/categories/cat3.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="meta">
+                      <div class="catrate">
+                        <span class="cat">
+                          <a href="#!">Насіння</a>
+                        </span>
+                        <span class="date">July 20, 2022</span>
+                      </div>
+                      <h2>
+                        <a href="#!"
+                          >Які насіннєві максимально корисні для Вашого
+                          травлення</a
+                        >
+                      </h2>
+                    </div>
+                  </li>
+                  <li class="left animate">
+                    <div class="thumbnail covering">
+                      <a href="#!">
+                        <img src="img/categories/cat4.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="meta">
+                      <div class="catrate">
+                        <span class="cat">
+                          <a href="#!">Трави і спеції</a>
+                        </span>
+                        <span class="date">July 01, 2022</span>
+                      </div>
+                      <h2>
+                        <a href="#!">Гострі продукти - користь чи шкода?</a>
+                      </h2>
+                    </div>
+                  </li>
+                  <li class="left animate">
+                    <div class="thumbnail covering">
+                      <a href="#!">
+                        <img src="img/categories/cat5.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="meta">
+                      <div class="catrate">
+                        <span class="cat">
+                          <a href="#!">Випічка</a>
+                        </span>
+                        <span class="date">April 20, 2022</span>
+                      </div>
+                      <h2>
+                        <a href="#!">Підбірка найкращий здобних виробів 2022</a>
+                      </h2>
+                    </div>
+                  </li>
+                  <li class="left animate">
+                    <div class="thumbnail covering">
+                      <a href="#!">
+                        <img src="img/categories/cat6.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="meta">
+                      <div class="catrate">
+                        <span class="cat">
+                          <a href="#!">Десерти</a>
+                        </span>
+                        <span class="date">July 30, 2022</span>
+                      </div>
+                      <h2>
+                        <a href="#!"
+                          >Які десерти обрати, щоб було і смачно, і корисно</a
+                        >
+                      </h2>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="container">
+          <div class="wrapper">
+            <div class="widget-footer">
+              <h4>Інформація</h4>
+              <ul>
+                <li><a href="#!">Про нас</a></li>
+                <li><a href="#!">Додатково</a></li>
+                <li><a href="#!">Наше меню</a></li>
+                <li><a href="#!">Блог</a></li>
+              </ul>
+            </div>
+            <div class="widget-footer">
+              <h4>Підтримка</h4>
+              <ul>
+                <li><a href="#!">Центр підтримки</a></li>
+                <li><a href="#!">Фідбек</a></li>
+                <li><a href="#!">Q&A</a></li>
+                <li><a href="#!">Контакти</a></li>
+              </ul>
+            </div>
+            <div class="widget-footer">
+              <div class="logo"><a href="#!">#CodeDelivery</a></div>
+              <p>
+                Ви також можете зв'язатися з нами, якщо маєте які небудь ділові
+                пропозиції
+              </p>
+              <p>Ми завжди раді співробітництву, це допомагає розвитку</p>
+              <ul class="socials">
+                <li>
+                  <a href="#!"><i class="ri-facebook-line"></i></a>
+                </li>
+                <li>
+                  <a href="#!"><i class="ri-twitter-line"></i></a>
+                </li>
+                <li>
+                  <a href="#!"><i class="ri-instagram-line"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p class="copyright">
+            &copy; 2022. CodeCoffeeCreator. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+    <div class="overlay"></div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
